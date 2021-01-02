@@ -1,0 +1,6 @@
+const path = require('path')
+
+module.exports = {
+    config: path.resolve(__dirname, 'src', 'config', 'database.ts') || 'postgres://user:pass@example.com:5432/dbname',
+    'migrations-path' : path.resolve(__dirname, 'src', 'database', 'migrations')
+}
